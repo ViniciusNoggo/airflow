@@ -1,0 +1,13 @@
+Instalar o Airflow: pip install 'apache-airflow==2.3.2' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.2/constraints-3.9.txt"
+
+Exportar a variável de ambiente: export AIRFLOW_HOME=~/Área\ de\ Trabalho/python/airflow
+
+Iniciar o Banco de Dados, criar um usuário e senha e executar os dois serviços Web Server e o Scheduler: airflow standalone
+
+Para entrar no Airflow: localhost:8080
+username: admin  password: 42CXZGCTztdSFvbY
+
+Para criar uma DAG.
+-   Criar a pasta que vai conter as DAGs, deve ter o nome: dags
+-   Criar um arquivo .py dentro da pasta dags para iniciar a contrução da DAG
+-   Escrever o código dentro do arquivo, exemplo para entender como cria: primeiro_dag
